@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 
 
-@FeignClient(url = "http://localhost:8081/drugdetailapp",name = "drugdetailapp")
+@FeignClient(url = "http://3.111.214.3:8081/drugdetailapp",name = "drugdetailapp")
 public interface DrugClient {
 	
 	@PutMapping("/updateDispatchableDrugStock/{name}/{location}/{quantity}")
