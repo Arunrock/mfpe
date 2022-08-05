@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
 
 /** Interface to connect with authentication service */
-@FeignClient(url = "http://localhost:8082/subscriptionapi", name = "Subscription-Details")
+@FeignClient(url = "http://3.111.214.3:8082/subscriptionapi", name = "Subscription-Details")
 public interface SubscriptionClient {
 
 	/**
