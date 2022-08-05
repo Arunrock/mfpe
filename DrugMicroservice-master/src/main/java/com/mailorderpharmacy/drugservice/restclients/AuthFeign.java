@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.cloud.openfeign.FeignClient;
 
-@FeignClient(name = "authapp", url = "http://localhost:8090/authapp")
+@FeignClient(name = "authapp", url = "http://3.108.185.172:8090/authapp")
 public interface AuthFeign
 {
     @RequestMapping(value = { "/validate" }, method = { RequestMethod.GET })
